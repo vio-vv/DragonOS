@@ -45,6 +45,7 @@ in [
 
   # Simple C utility
   (static.callPackage ./about {})
+  (static.callPackage ./myapp {})
 
 ]
 ++ lib.optionals (target == "x86_64" && testOpt.syscall.enable) [
